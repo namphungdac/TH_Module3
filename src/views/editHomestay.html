@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="card mt-2">
+        <div class="card-header">
+            <h3>Homestay</h3>
+            <div class="card-columns">
+                <a href="/admin/Course/Add"><button type="button" class="btn btn-outline-info">Thêm Homestay</button></a>
+            </div>
+        </div>
+        <div class="card-body">
+            <form action="" method="post">
+                <label for="validationTooltip01">Name</label>
+                <input name="hsName" value="{hsName}" type="text" class="form-control" id="validationTooltip01"  required>
+
+                <label for="validationTooltip02">Thành phố:</label>
+                <input name="city" value="{city}" type="text" class="form-control" id="validationTooltip02"  required>
+
+                <label for="validationTooltip03">Số phòng ngủ:</label>
+                <input name="bedroomNumber" value="{bedroomNumber}" type="number" class="form-control" id="validationTooltip03"  required>
+
+                <label for="validationTooltip04">Số phòng vệ sinh:</label>
+                <input name="toiletNumber" value="{toiletNumber}" type="number" class="form-control" id="validationTooltip04"  required>
+
+                <label for="validationTooltip05">Giá:</label>
+                <input name="price" value="{price}" type="number" class="form-control" id="validationTooltip05"  required>
+
+                <label for="validationTooltip06">Mô tả:</label>
+                <input name="describer" value="{describer}" type="text" class="form-control" id="validationTooltip06"  required>
+
+                <a href="/"><button type="submit" class="btn btn-primary">Lưu</button></a>
+            </form>
+        </div>
+    </div>
+
+    <a href="/"><button type="button" class="btn btn-primary">Thoát</button></a>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
