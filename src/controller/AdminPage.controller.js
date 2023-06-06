@@ -107,6 +107,15 @@ class AdminPageController {
         }
     }
 
+    static async deleteHomestayPage(req, res) {
+        let hsID = qs.parse(url.parse(req.url).query).id;
+        await HomestayModel.deleteHomestayID(hsID);
+        let html = await BaseFunctionController.readFileHTML('./src/views/deleteHomestay.html');
+        res.writeHead(200, {'Content-type': 'text/html'});
+        res.write(html);
+        res.end();
+    }
+
 }
 
 module.exports = AdminPageController;

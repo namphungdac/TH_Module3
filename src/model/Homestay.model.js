@@ -21,6 +21,11 @@ class HomestayModel extends DatabaseModel {
         await DatabaseModel.querySql(sql);
     }
 
+    static async deleteHomestayID(hsID) {
+        let sql = `delete from homestayInfo where hsID = ${hsID};`;
+        await DatabaseModel.querySql(sql);
+    }
+
 }
 
 module.exports = HomestayModel;

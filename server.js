@@ -20,6 +20,7 @@ let router = {
     '/detail': adminPageController.getHomestayDetailPage,
     '/addHomestay': adminPageController.handleAddHomestayPage,
     '/edit' : adminPageController.handleEditHomestayPage,
+    '/delete': adminPageController.deleteHomestayPage,
 }
 
 module.exports = router;
